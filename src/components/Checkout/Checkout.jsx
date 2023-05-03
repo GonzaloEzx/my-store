@@ -1,5 +1,4 @@
 import { useState, useEffect, useContext } from "react";
-// import { getProducts, getProductsByCategory } from "../../asyncMock";
 import { CartContext } from "../../context/CartContext";
 import { db } from '../../services/firebase/firebaseConfig'
 import CheckoutForm from '../CheckoutForm/CheckoutForm'
