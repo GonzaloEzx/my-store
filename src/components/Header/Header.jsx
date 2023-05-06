@@ -1,10 +1,15 @@
 import "./Header.css";
 
-const Header = () => {
+const Header = ({
+  titulo = "My Store Tech",
+  subtitulo = "Hardware del bueno",
+}) => {
   return (
     <div className="Header">
-      <h1>My techStore</h1>
-      <h2>Hardware de calidad</h2>
+      <a href="http://" target="/">
+        <h1>{titulo}</h1>
+      </a>
+      <h2>{subtitulo}</h2>
     </div>
   );
 };

@@ -1,0 +1,32 @@
+.navbar {
+    border-radius: 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.3rem;
+    background-color: #defaee;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar__title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.navbar__collection {
+    text-align: left;
+    display:inline-block;
+    align-items:center;
+}
+
+.navbar__collection-item {
+    margin-left: 2rem;
+    font-size: 1.5rem;
+    color: #666;
+    text-decoration:none;
+}
+
+.navbar__collection-item:hover {
+    color: #333;
+}

@@ -12,9 +12,9 @@ function App() {
   return (
     <div className="App">
       <BrowserRouter>
+        <Header />
+        <NavBar />
         <CartProvider>
-          <Header />
-          <NavBar />
           <Routes>
             <Route path="/" element={<ItemListContainer />} />
             <Route
@@ -28,6 +28,7 @@ function App() {
           </Routes>
         </CartProvider>
       </BrowserRouter>
+      <button onClickCapture={1}>boton</button>
     </div>
   );
 }

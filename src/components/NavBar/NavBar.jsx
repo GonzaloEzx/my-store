@@ -4,30 +4,36 @@ import { NavLink, Link } from "react-router-dom";
 
 const NavBar = () => {
   return (
-    <nav className="NavBar">
+    <nav className="navbar">
       <Link to="/">
-        <h3>my TechStore website</h3>
+        <h3 className="navbar__title">Categorias</h3>
       </Link>
-      <div className="Categories">
+      <ul className="navbar__collection">
         <NavLink
           to={`/category/celular`}
           className={({ isActive }) => (isActive ? "ActiveOption" : "Option")}
         >
-          Celulares
+          <li className="navbar__collection-item">
+            <a href="#">Celulares</a>
+          </li>
         </NavLink>
         <NavLink
           to={`/category/tablet`}
           className={({ isActive }) => (isActive ? "ActiveOption" : "Option")}
         >
-          Tablets
+          <li className="navbar__collection-item">
+            <a href="#">Tablets</a>
+          </li>
         </NavLink>
         <NavLink
           to={`/category/notebook`}
           className={({ isActive }) => (isActive ? "ActiveOption" : "Option")}
         >
-          Notebooks
+          <li className="navbar__collection-item">
+            <a href="#">Notebooks</a>
+          </li>
         </NavLink>
-      </div>
+      </ul>
       <CartWidget />
     </nav>
   );
