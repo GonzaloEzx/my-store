@@ -43,6 +43,7 @@ export const CartProvider = ({ children }) => {
     </CartContext.Provider>
   );
 };
+<<<<<<< HEAD
 
 // import { createContext, useState } from "react"
 
@@ -87,3 +88,6 @@ export const CartProvider = ({ children }) => {
 //         </CartContext.Provider>
 //     );
 // };
+=======
+export default CartContext
+>>>>>>> 638089308b30c1b7354906978846e10423cc011b
