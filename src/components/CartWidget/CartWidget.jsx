@@ -9,7 +9,7 @@ const CartWidget = () => {
 
   return (
     <Link
-      to="./cart"
+      to="/cart"
       className="CartWidget"
       style={{ display: totalQuantity > 0 ? "block" : "none" }}
     >
