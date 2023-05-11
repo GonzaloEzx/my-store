@@ -1,4 +1,11 @@
-img {
+.CardItem {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 2rem;
+    text-align: center;
+}
+
+.ItemImg {
     max-width: 100%;
     height: auto;
 }

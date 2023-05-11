@@ -5,7 +5,7 @@ const Header = ({
   subtitulo = "Hardware del bueno",
 }) => {
   return (
-    <div className="Header">
+    <div className="header">
       <a href="http://" target="/">
         <h1>{titulo}</h1>
       </a>

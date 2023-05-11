@@ -7,6 +7,8 @@ import ItemDetailContainer from "./components/ItemDetailContainer/ItemDetailCont
 import Cart from "./components/Cart/Cart";
 import Checkout from "./components/Checkout/Checkout";
 import { CartProvider } from "./context/CartContext";
+import ItemDetail from "./components/ItemDetail/ItemDetail";
+import CartWidget from "./components/CartWidget/CartWidget";
 
 function App() {
   return (
@@ -16,19 +18,19 @@ function App() {
         <NavBar />
         <CartProvider>
           <Routes>
+            <Route path="/cart" element={<Cart />} />
             <Route path="/" element={<ItemListContainer />} />
             <Route
               path="/category/:categoryId"
               element={<ItemListContainer />}
             />
+            <Route path="/item" element={<ItemDetail />} />
             <Route path="/item/:itemId" element={<ItemDetailContainer />} />
-            <Route path="/cart" element={<Cart />} />
             <Route path="/checkout" element={<Checkout />} />
             <Route path="*" element={<h1>404 NOT FOUND</h1>} />
           </Routes>
         </CartProvider>
       </BrowserRouter>
-      <button onClickCapture={1}>boton</button>
     </div>
   );
 }

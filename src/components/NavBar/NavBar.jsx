@@ -6,7 +6,7 @@ const NavBar = () => {
   return (
     <nav className="navbar">
       <Link to="/">
-        <h3 className="navbar__title">Categorias</h3>
+        <h3 className="navbar__title">Las Colecciones</h3>
       </Link>
       <ul className="navbar__collection">
         <NavLink
@@ -33,8 +33,10 @@ const NavBar = () => {
             <a href="#">Notebooks</a>
           </li>
         </NavLink>
+        <NavLink to="/cart">
+          <CartWidget />
+        </NavLink>
       </ul>
-      <CartWidget />
     </nav>
   );
 };

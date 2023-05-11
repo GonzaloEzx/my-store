@@ -1,4 +1,4 @@
-.cart-widget {
+.cart_widget {
   position: relative;
   display: flex;
   align-items: center;
@@ -8,8 +8,8 @@
 }
 
 .cart-icon {
-  width: 1.5rem;
-  height: 1.5rem;
+  width: 2.5rem;
+  height: 2.5rem;
   fill: #fff;
 }
 
@@ -24,6 +24,15 @@
   height: 1.5rem;
   font-size: 0.75rem;
   color: #fff;
-  background-color: #f44336;
+  background-color: #ff6b6b;
   border-radius: 50%;
+}
+
+.cart_img {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.5rem;
+  height: 2.5rem;
 }
