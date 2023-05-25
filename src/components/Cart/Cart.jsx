@@ -34,7 +34,7 @@ const Cart = () => {
             clearCart();
           }
         }}
-        className="Button"
+        className="Option"
       >
         Limpiar carrito
       </button>
